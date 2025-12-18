@@ -1,7 +1,8 @@
 # Equivalência
+## Projeto parte do estágio na EESC - USP
 
-O projeto Equivalência tem como objetivo informatizar e padronizar o processo de requerimentos de equivalência de disciplinas.
-Tem como pilares principais as bibliotecas uspdev/workflow e uspdev/forms, que foram construídas com foco na generalização.
+O projeto Equivalência tem como objetivo informatizar e padronizar o processo de requerimentos de equivalência de disciplinas na Universidade de São Paulo.
+Tem como pilares principais as bibliotecas uspdev/workflow e uspdev/forms (também desenvolvidas durante meu estágio), que foram construídas com foco na generalização.
 Logo, o projeto Equivalência pode ser utilizado e adaptado em outros contextos, com vários tipos de requerimentos.
 
 ## Features
@@ -19,7 +20,7 @@ Logo, o projeto Equivalência pode ser utilizado e adaptado em outros contextos,
 ## Instalação e Configuração
 
 ### 1. **Clonar o repositório:**
-    git clone https://github.com/uspdev/equivalencia.git
+    git clone https://github.com/antonioacampos/equivalencia.git
 
 ### 2. **Instalar as dependências através do composer:**
 - Instala as dependências:
@@ -48,7 +49,7 @@ composer update
 
 - 'DB_PASSWORD' => Senha de acesso ao banco de dados
 
-- 'SENHAUNICA_DEV' => Link para o host do senhaunica, utilizado para autenticação
+- 'SENHAUNICA_DEV' => Link para o host do senhaunica, utilizado para autenticação (caso fora do ambiente institucional da universidade, utilizar o uspdev/senhaunica-faker)
 
 ### 4. **Gerar chave da aplicação**
     php artisan key:generate
